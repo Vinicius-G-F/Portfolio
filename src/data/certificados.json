@@ -3,6 +3,29 @@
         "id": 0,
         "imgCertificado": {
             "pt-br": {
+                "frente": "/assets/img/certificados/en/cna-frente.png",
+                "verso": "/assets/img/certificados/en/cna-verso.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/cna-frente.png",
+                "verso": "/assets/img/certificados/en/cna-verso.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/cna.png",
+        "escola": "CNA idiomas",
+        "textos": {
+            "pt-br": {
+                "curso": "MASTER IN ENGLISH"
+            },
+            "en": {
+                "curso": "MASTER IN ENGLISH"
+            }
+        }
+    },
+    {
+        "id": 1,
+        "imgCertificado": {
+            "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/react-typescript-frente-1.png",
                 "verso": "/assets/img/certificados/pt-br/react-typescript-verso-1.png"
             },
@@ -21,29 +44,7 @@
                 "curso": "Manage React applications with Typescript"
             }
         }
-    },
-    {
-        "id": 1,
-        "imgCertificado": {
-            "pt-br": {
-                "frente": "/assets/img/certificados/pt-br/iniciante-frente-1.png",
-                "verso": "/assets/img/certificados/pt-br/iniciante-verso-1.png"
-            },
-            "en": {
-                "frente": "/assets/img/certificados/en/iniciante-frente-1.png",
-                "verso": "/assets/img/certificados/en/iniciante-verso-1.png"
-            }
-        },
-        "imgCertificadoIcone": "/assets/img/certificados/html.png",
-        "escola": "Alura",
-        "textos": {
-            "pt-br": {
-                "curso": "Iniciante em Programação"
-            },
-            "en": {
-                "curso": "Beginner in Programming"
-            }
-        }
+
     },
     {
         "id": 2,
@@ -289,16 +290,15 @@
                 "verso": "/assets/img/certificados/en/iniciante-verso-1.png"
             }
         },
-        "imgCertificadoIcone": "/assets/img/certificados/cna.png",
-        "escola": "CNA idiomas",
+        "imgCertificadoIcone": "/assets/img/certificados/html.png",
+        "escola": "Alura",
         "textos": {
             "pt-br": {
-                "curso": "MASTER IN ENGLISH"
+                "curso": "Iniciante em Programação"
             },
             "en": {
-                "curso": "MASTER IN ENGLISH"
+                "curso": "Beginner in Programming"
             }
         }
-        
     }
 ]
