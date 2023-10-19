@@ -1,0 +1,58 @@
+[
+    {
+        "id": 0,
+        "imgURL": "/assets/img/projetos/meteora.png",
+        "textos": {
+            "pt-br": {
+                "titulo": "Meteora 2023 - Challenge Alura",
+                "intro": "Desafio aonde os alunos devem fazer um site relacionado a moda."
+            },
+            "en": {
+                "titulo": "Meteora 2023 - Challenge Alura",
+                "intro": "Challenge where students must create a website related to fashion."
+            }
+        }
+    },
+    {
+        "id": 1,
+        "imgURL": "/assets/img/projetos/GameSaver.png",
+        "textos": {
+            "pt-br": {
+                "titulo": "GameSaver",
+                "intro": "Desafio pessoal para fazer um site usando jquery para criar listas de jogos."
+            },
+            "en": {
+                "titulo": "GameSaver",
+                "intro": "Personal challenge to make a website using jquery to create game lists."
+            }
+        }
+    },
+    {
+        "id": 2,
+        "imgURL": "/assets/img/projetos/code-chella.png",
+        "textos": {
+            "pt-br": {
+                "titulo": "CodeChella 2023 - Challenge Alura",
+                "intro": "Desafio aonde os alunos devem fazer um site relacionado a shows de rock.."
+            },
+            "en": {
+                "titulo": "CodeChella 2023 - Challenge Alura",
+                "intro": "Challenge where students must create a website related to rock concerts."
+            }
+        }
+    },
+    {
+        "id": 3,
+        "imgURL": "/assets/img/projetos/alura-geek.png",
+        "textos": {
+            "pt-br": {
+                "titulo": "Alura Geek - Challenge Alura",
+                "intro": "Desafio aonde os alunos devem fazer um site relacionado a jogos e periféricos."
+            },
+            "en": {
+                "titulo": "Alura Geek - Challenge Alura",
+                "intro": "Challenge where students must create a website related to games and peripherals."
+            }
+        }
+    }
+]

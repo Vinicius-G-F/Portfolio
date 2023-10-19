@@ -1,0 +1,304 @@
+[
+    {
+        "id": 0,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/react-typescript-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/react-typescript-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/react-typescript-frente-1.png",
+                "verso": "/assets/img/certificados/en/react-typescript-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/react.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Gerencie aplicações React com Typescript"
+            },
+            "en": {
+                "curso": "Manage React applications with Typescript"
+            }
+        }
+    },
+    {
+        "id": 1,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/iniciante-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/iniciante-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/iniciante-frente-1.png",
+                "verso": "/assets/img/certificados/en/iniciante-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/html.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Iniciante em Programação"
+            },
+            "en": {
+                "curso": "Beginner in Programming"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/html-css-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/html-css-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/html-css-frente-1.png",
+                "verso": "/assets/img/certificados/en/html-css-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/css.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "HTML e CSS"
+            },
+            "en": {
+                "curso": "HTML e CSS"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/js-web-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/js-web-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/js-web-frente-1.png",
+                "verso": "/assets/img/certificados/en/js-web-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/js.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Desenvolva aplicações Web com JavaScript"
+            },
+            "en": {
+                "curso": "Develop web applications with JavaScript"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/react-js-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/react-js-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/react-js-frente-1.png",
+                "verso": "/assets/img/certificados/en/react-js-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/react.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Explore React com JavaScript"
+            },
+            "en": {
+                "curso": "Explore React with JavaScript"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/ts-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/ts-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/ts-frente-1.png",
+                "verso": "/assets/img/certificados/en/ts-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/typescript.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Melhore sua experiência de desenvolvimento com TypeScript"
+            },
+            "en": {
+                "curso": "Improve your development experience with TypeScript"
+            }
+        }
+    },
+    {
+        "id": 6,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/vue-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/vue-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/vue-frente-1.png",
+                "verso": "/assets/img/certificados/en/vue-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/vue.svg",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Ouse com o Framework Vue.js 3"
+            },
+            "en": {
+                "curso": "Dare with the Vue.js 3 Framework"
+            }
+        }
+    },
+    {
+        "id": 7,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/js-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/js-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/js-frente-1.png",
+                "verso": "/assets/img/certificados/en/js-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/js.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Aprenda a programar em JavaScript com foco no back-end"
+            },
+            "en": {
+                "curso": "Learn to program in JavaScript with a focus on the back-end"
+            }
+        }
+    },
+    {
+        "id": 8,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/wordpress-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/iniciante-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/wordpress-frente-1.png",
+                "verso": "/assets/img/certificados/en/wordpress-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/wordpress.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "WordPress: crie sites do zero"
+            },
+            "en": {
+                "curso": "WordPress: create websites from scratch"
+            }
+        }
+    },
+    {
+        "id": 9,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/php-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/php-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/php-frente-1.png",
+                "verso": "/assets/img/certificados/en/php-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/php.svg",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Aprenda a programar em PHP"
+            },
+            "en": {
+                "curso": "Learn to program in PHP"
+            }
+        }
+    },
+    {
+        "id": 10,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/bootstrap-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/bootstrap-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/bootstrap-frente-1.png",
+                "verso": "/assets/img/certificados/en/bootstrap-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/bootstrap.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Bootstrap 5: desenvolvimento de websites responsivos e atraentes"
+            },
+            "en": {
+                "curso": "Bootstrap 5: development of responsive and attractive websites"
+            }
+        }
+        
+    },
+    {
+        "id": 11,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/figma-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/figma-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/figma-frente-1.png",
+                "verso": "/assets/img/certificados/en/figma-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/figma.png",
+        "escola": "Alura",
+        "textos": {
+            "pt-br": {
+                "curso": "Figma"
+            },
+            "en": {
+                "curso": "Figma"
+            }
+        }
+    
+    },
+    {
+        "id": 12,
+        "imgCertificado": {
+            "pt-br": {
+                "frente": "/assets/img/certificados/pt-br/iniciante-frente-1.png",
+                "verso": "/assets/img/certificados/pt-br/iniciante-verso-1.png"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/en/iniciante-frente-1.png",
+                "verso": "/assets/img/certificados/en/iniciante-verso-1.png"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/cna.png",
+        "escola": "CNA idiomas",
+        "textos": {
+            "pt-br": {
+                "curso": "MASTER IN ENGLISH"
+            },
+            "en": {
+                "curso": "MASTER IN ENGLISH"
+            }
+        }
+        
+    }
+]
