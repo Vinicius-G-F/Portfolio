@@ -17,7 +17,11 @@ export default {
       },
       dropShadow: {
         certificadoLight: '10px 11px 2px rgba(0, 0, 0, 0.25)',
-        certificadoDark: '10px 11px 2px rgba(255, 255, 255, 0.25)'
+        certificadoDark: '10px 11px 2px rgba(255, 255, 255, 0.25)',
+        redShadow: "2px 4px 6px red",
+        blackShadow: "2px 4px 6px black",
+        whiteShadow: "1px 1px 4px white",
+        blueShadow: "2px 4px 6px blue"
       },
       width: {
         desktop: "1128px",
@@ -36,6 +40,7 @@ export default {
           900: 'rgb(0,0,0)'
         },
         purple: {
+          300: 'rgb(112, 0, 255)',
           400: 'rgba(44, 0, 102, 1)'
         },
         yellow: {

@@ -1,10 +1,10 @@
-<svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="18" height="12" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg" id="seta">
 <g id="Frame" clip-path="url(#clip0_230_782)">
-<path id="Vector" d="M1.91 1.07983L6.5 5.66984L11.09 1.07983L12.5 2.49984L6.5 8.49984L0.5 2.49984L1.91 1.07983Z" fill="black"/>
+<path width="18" transform="scale(1.5)" height="12" id="Vector" d="M1.91 1.07983L6.5 5.66984L11.09 1.07983L12.5 2.49984L6.5 8.49984L0.5 2.49984L1.91 1.07983Z"/>
 </g>
 <defs>
 <clipPath id="clip0_230_782">
-<rect width="13" height="8" fill="white" transform="translate(0 0.5)"/>
+<rect width="18" height="12" fill="white" transform="translate(0 0.5)"/>
 </clipPath>
 </defs>
 </svg>

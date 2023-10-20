@@ -48,7 +48,7 @@
                 }
 
                 a {
-                    @apply text-white bg-blue-300 py-3 px-5 rounded-[6px];
+                    @apply text-white bg-blue-300 py-3 px-5 rounded-[6px] hover:bg-purple-300 duration-150;
                 }
             }
         }

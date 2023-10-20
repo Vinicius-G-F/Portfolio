@@ -1,7 +1,7 @@
 
 export default function enviarMensagem (mensagem: string){
     return ()=>{
-        fetch('http://localhost:3000/enviar-mensagem', {
+        fetch('http://18.230.23.227:3000/enviar-mensagem', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

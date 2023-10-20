@@ -18,29 +18,36 @@
                 </div>
             </div>
         </div>
-        <button class="desktop-botao" v-if="projetosQtd <= certificados.length" type="button" @click="mostrarMais3">{{
-            textos[idiomaSelecionado].botao }}<img src="/assets/img/icons/downArrow.svg" :alt="textos[idiomaSelecionado].botao"></button>
+        <button class="desktop-botao" v-if="projetosQtd <= certificados.length" type="button" @click="mostrarMais3">
+            {{textos[idiomaSelecionado].botao }}
+            <svg width="18" height="12">
+                <use xlink:href="/assets/img/icons/downArrow.svg#Vector"></use>
+            </svg>
+            </button>
         <button class="mobile-tablet-botao"
             v-if="projetosQtd <= certificados.length || projetosQtd > maximoProjetosMobileETablet" type="button"
-            @click="mostrarMais2">{{ textos[idiomaSelecionado].botao }}<img src="/assets/img/icons/downArrow.svg"
-                :alt="textos[idiomaSelecionado].botao"></button>
+            @click="mostrarMais2">
+            {{ textos[idiomaSelecionado].botao }}
+            <svg width="18" height="12">
+                <use xlink:href="/assets/img/icons/downArrow.svg#Vector"></use>
+            </svg>
+            </button>
 
     </section>
 
 
     <div @click="aoClicarFora">
-        <div v-if="isModalOpen" class="fixed modal-overlay inset-0 flex items-center justify-center z-10">
-            <div class="modal-overlay"></div>
-            <div class="modal-container dark:bg-[#1B1B1B] dark:shadow-modalShadowDark bg-white w-min shadow-modalShadowLight" @click.stop>
-                <header class="flex justify-end border-b-2 border-black"><button class="text-[#FF0000] font-bold text-[32px] leading-8 m-4 dark:text-white" type="button" @click="fecharModal">X</button></header>
+        <div v-if="isModalOpen" class="modal-overlay">
+            <div class="modal-container" @click.stop>
+                <header><button type="button" @click="fecharModal">X</button></header>
                 <main>
-                    <img v-if="!rotacionarImgModal" class="max-w-[80vw] max-h-[65vh]" :src="imgModalFrente" :alt="textos[idiomaSelecionado].certificado">
-                    <img v-if="rotacionarImgModal" class="max-w-[80vw] max-h-[65vh]" :src="imgModalVerso" :alt="textos[idiomaSelecionado].certificado">
+                    <img v-if="!rotacionarImgModal" :src="imgModalFrente" :alt="textos[idiomaSelecionado].certificado">
+                    <img v-if="rotacionarImgModal" :src="imgModalVerso" :alt="textos[idiomaSelecionado].certificado">
                 </main>
-                <footer class="flex justify-end p-4 border-t-2 border-black">
-                    <button @click="rotacionarImagem" class="border rounded-[16px] py-4 px-8 border-black mr-8 dark:text-white dark:border-white dark:bg-black" type="button"><img src="/assets/img/icons/rotate-360.svg" class="dark:invert" :alt="textos[idiomaSelecionado].botaoRotacionar"></button>
+                <footer>
+                    <button @click="rotacionarImagem" class="rotacionar-btn" type="button"><img src="/assets/img/icons/rotate-360.svg" class="dark:invert" :alt="textos[idiomaSelecionado].botaoRotacionar"></button>
                     <button type="button" @click="fecharModal"
-                        class="text-[#FF0000] dark:text-white dark:border-white dark:bg-black border-2 border-red-100 py-4 px-8 rounded-[16px]">{{ textos[idiomaSelecionado].fechar }}</button>
+                        class="fechar-btn">{{ textos[idiomaSelecionado].fechar }}</button>
                 </footer>
             </div>
         </div>
@@ -98,11 +105,52 @@
     }
 
     .desktop-botao {
-        @apply border hidden xl:flex items-center gap-4 px-8 py-4 border-black mx-auto underline text-[24px] rounded-[16px] dark:invert;
+        @apply border hidden xl:flex items-center gap-4 px-8 py-4 border-black mx-auto underline text-[24px] rounded-[16px] dark:text-white dark:border-white hover:drop-shadow-blackShadow dark:hover:drop-shadow-whiteShadow duration-150;
+        svg {
+            @apply fill-black dark:fill-white;
+        }
     }
 
     .mobile-tablet-botao {
-        @apply border flex xl:hidden items-center gap-4 px-8 py-4 border-black mx-auto underline text-[24px] rounded-[16px] dark:invert;
+        @apply border flex xl:hidden items-center gap-4 px-8 py-4 border-black mx-auto underline text-[24px] rounded-[16px] dark:invert hover:drop-shadow-blackShadow dark:hover:drop-shadow-whiteShadow duration-150;
+        svg {
+            @apply fill-black dark:fill-white;
+        }
+    }
+}
+
+.modal-overlay {
+    @apply fixed inset-0 flex items-center justify-center z-10;
+    .modal-container {
+        @apply dark:bg-[#1B1B1B] border-4 rounded-[16px] dark:shadow-modalShadowDark bg-white w-min shadow-modalShadowLight;
+        header {
+            @apply flex justify-end border-b-2 border-black;
+            button {
+                @apply text-[#FF0000] font-bold text-[32px] leading-8 m-4 dark:text-white;
+            }
+        }
+        main {
+            img {
+                @apply max-w-[80vw] max-h-[65vh];
+            }
+        }
+        footer {
+            @apply flex justify-end p-4 border-t-2 border-black;
+            .rotacionar-btn {
+                @apply border rounded-[16px] py-4 px-8 border-black mr-8 dark:text-white dark:border-white dark:bg-black hover:drop-shadow-blackShadow duration-150 dark:hover:drop-shadow-whiteShadow;
+                img {
+                    @apply h-[24px] w-[24px];
+                }
+                &:hover {
+                    img {
+                        @apply border-b border-black;
+                    }
+                }
+            }
+            .fechar-btn {
+                @apply text-[#FF0000] dark:text-white dark:border-white dark:bg-black border-2 border-red-100 py-4 px-8 rounded-[16px] hover:drop-shadow-redShadow hover:underline duration-150 dark:hover:drop-shadow-whiteShadow;
+            }
+        }
     }
 }
 

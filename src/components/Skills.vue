@@ -74,7 +74,7 @@ export default defineComponent({
             @apply text-[24px];
         }
         .botao-download {
-            @apply text-blue-400 font-semibold py-2 px-4 flex justify-center border-2 rounded-[16px] border-blue-400 mt-8;
+            @apply text-blue-400 font-semibold py-2 px-4 flex justify-center border-2 rounded-[16px] border-blue-400 mt-8 hover:drop-shadow-blueShadow hover:underline duration-150;
         }
         div {
             a {
