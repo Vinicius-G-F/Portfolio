@@ -27,7 +27,7 @@
 
 <style lang="scss" scoped>
 footer {
-    @apply bg-black text-white font-bold text-[16px] py-5 dark:bg-dark-200 mt-10;
+    @apply bg-black text-white font-bold text-[16px] py-5 dark:bg-dark-200;
 
     .rodape__container {
         @apply w-desktop mx-auto flex justify-between items-center;

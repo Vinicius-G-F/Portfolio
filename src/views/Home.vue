@@ -6,7 +6,6 @@
         <Portfolio />
         <Certification />
         <Contact />
-        <Rodape />
     </main>
 </template>
 
@@ -18,7 +17,6 @@ import Skills from "../components/Skills.vue"
 import Portfolio from '../components/Portfolio.vue';
 import Certification from '../components/Certification.vue';
 import Contact from '../components/Contact.vue';
-import Rodape from "../components/Rodape.vue"
 
 export default defineComponent({
     name: 'Home',
@@ -28,15 +26,14 @@ export default defineComponent({
         Skills,
         Portfolio,
         Certification,
-        Contact,
-        Rodape
+        Contact
     }
 })
 </script>
 
 <style lang="scss" scoped>
     .home {
-        @apply bg-gray-100 dark:bg-dark-900;
+        @apply bg-gray-100 dark:bg-dark-900 pb-10;
         
     }
 </style>
