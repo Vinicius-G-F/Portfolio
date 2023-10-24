@@ -85,12 +85,7 @@ import enviarMensagem from '../util/enviarMensagem';
 
 const store = useStore()
 
-try{
-    console.log(import.meta.env.VITE_API_URL)
-    console.log(process.env.VITE_API_URL)
-} catch {
-
-}
+console.log(import.meta.env.VITE_API_URL)
 
 export default defineComponent({
     name: "Contact",
