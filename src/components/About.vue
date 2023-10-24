@@ -1,5 +1,5 @@
 <template>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__container">
             <h2>{{ textos[idiomaSelecionado].titulo }}</h2>
             <p>
@@ -54,12 +54,12 @@ export default defineComponent({
 .about{
     @apply flex justify-center dark:text-white;
     &__container {
-        @apply w-desktop flex flex-col items-center;
+        @apply xl:w-desktop px-4 sm:px-8 xl:px-0 flex flex-col items-center;
         h2 {
-            @apply font-bold text-[32px] pt-10 pb-8;
+            @apply font-bold text-[24px] sm:text-[32px] pt-10 pb-8;
         }
         p{
-            @apply text-[24px];
+            @apply sm:text-[24px];
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
         <div class="projetos-container">
             <div class="projeto" v-for="projeto in projetos" v-bind:key="projeto.id">
@@ -22,18 +22,18 @@
     @apply grid text-center mt-14;
 
     h2 {
-        @apply mb-4 font-bold text-[32px] dark:text-white;
+        @apply mb-4 font-bold text-[24px] sm:text-[32px] dark:text-white;
     }
 
     .projetos-container {
-        @apply w-desktop flex flex-wrap justify-center gap-4 justify-self-center;
+        @apply xl:w-desktop flex justify-center flex-col sm:flex-row sm:justify-around px-4 sm:px-8 xl:p-0 flex-wrap xl:justify-center gap-4 justify-self-center;
 
         .projeto {
-            @apply w-card bg-white mt-4 rounded-[16px] px-2 pt-2 pb-6 flex flex-col items-center dark:text-white dark:shadow-cardProjeto dark:bg-dark-200;
+            @apply max-w-[380px] min-w-[320px] min-w-[auto] max-w-[auto] sm:w-[270px] md:w-[310px] lg:w-card bg-white mt-4 rounded-[16px] px-2 pt-2 pb-6 flex flex-col items-center dark:text-white dark:shadow-cardProjeto dark:bg-dark-200;
             box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
 
             img {
-                @apply w-[334px] h-[200px] rounded-[16px] mb-6;
+                @apply w-[334px] max-h-[220px] rounded-[16px] mb-6;
             }
 
             div {

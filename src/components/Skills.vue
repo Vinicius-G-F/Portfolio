@@ -1,5 +1,5 @@
 <template>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills__container">
             <h2>{{ textos[idiomaSelecionado].titulo }}</h2>
             <p>
@@ -15,10 +15,10 @@
             </p>
             <div class="w-full">
                 <a v-if="idiomaSelecionado === 'pt-br'" href="/Vinícius-cv-pt-br.pdf" download="Vinícius-cv-pt-br.pdf">
-                    <button class="botao-download" type="button">Download</button>     
+                    <button class="botao-download" type="button">Download</button>
                 </a>
                 <a v-else href="/Vinícius-cv-en.pdf" download="Vinícius-cv-en.pdf">
-                    <button class="botao-download" type="button">Download</button>     
+                    <button class="botao-download" type="button">Download</button>
                 </a>
             </div>
         </div>
@@ -32,7 +32,7 @@ const store = useStore()
 
 export default defineComponent({
     name: "Skills",
-    data(){
+    data() {
         const textos = {
             "pt-br": {
                 paragrafo1: `Atualmente eu estou a disposição para possíveis contratações e trabalhos free lancers com desenvolvimento Front-end, os projetos em que eu trabalhei estão logo abaixo na seção de portfólio do site ou no meu curriculum.`,
@@ -55,7 +55,7 @@ export default defineComponent({
         }
     },
     computed: {
-        idiomaSelecionado(): "pt-br" | "en"{
+        idiomaSelecionado(): "pt-br" | "en" {
             return store.getters.idiomaAtivado.nome.toLowerCase()
         }
     }
@@ -63,24 +63,28 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.skills{
+.skills {
     @apply flex justify-center dark:text-white;
+
     &__container {
-        @apply w-desktop flex flex-col items-center;
+        @apply xl:w-desktop px-4 sm:px-8 xl:p-0 flex flex-col items-center;
+
         h2 {
-            @apply font-bold text-[32px] pt-10 pb-8;
+            @apply font-bold text-[24px] sm:text-[32px] pt-10 pb-8;
         }
-        p{
-            @apply text-[24px];
+
+        p {
+            @apply sm:text-[24px];
         }
-        .botao-download {
-            @apply text-blue-400 font-semibold py-2 px-4 flex justify-center border-2 rounded-[16px] border-blue-400 mt-8 hover:drop-shadow-blueShadow hover:underline duration-150;
-        }
+
         div {
             a {
                 @apply w-fit block;
+
+                .botao-download {
+                    @apply sm:text-[24px] text-blue-400 font-semibold py-2 px-4 flex justify-center border-2 rounded-[16px] border-blue-400 mt-8 hover:drop-shadow-blueShadow hover:underline duration-150 dark:bg-dark-200;
+                }
             }
         }
     }
-}
-</style>
+}</style>

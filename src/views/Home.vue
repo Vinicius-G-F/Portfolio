@@ -27,7 +27,14 @@ export default defineComponent({
         Portfolio,
         Certification,
         Contact
-    }
+    },
+    mounted() {
+        const element = document.getElementById('cabecalho');
+
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+    },
 })
 </script>
 

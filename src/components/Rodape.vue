@@ -1,7 +1,7 @@
 <template>
-    <footer>
+    <footer class="rodape">
         <div class="rodape__container">
-            <p>{{ textos[idiomaSelecionado].creditos }}</p>
+            <p class="creditos">{{ textos[idiomaSelecionado].creditos }}</p>
             <div class="redes">
                 <p>{{ textos[idiomaSelecionado].redes }}</p>
                 <div class="redes__icones">
@@ -26,22 +26,22 @@
 </template>
 
 <style lang="scss" scoped>
-footer {
+.rodape {
     @apply bg-black text-white font-bold text-[16px] py-5 dark:bg-dark-200;
 
-    .rodape__container {
-        @apply w-desktop mx-auto flex justify-between items-center;
-
+    &__container {
+        @apply px-4 sm:px-8 xl:px-0 xl:w-desktop mx-auto flex flex-col sm:flex-row justify-between items-center;
+        .creditos{
+            @apply text-center border-b border-white sm:border-none pb-4 mb-4 sm:pb-0 sm:mb-0;
+        }
         .redes {
-            @apply flex items-center flex-col;
+            @apply flex items-center flex-col pb-4 sm:pb-0;
 
             &__icones {
                 @apply invert flex;
 
                 img {
-                    a{
-                        @apply w-[32px] h-[32px];
-                    }
+                    @apply w-[32px] h-[32px];
                 }
             }
         }

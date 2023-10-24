@@ -1,7 +1,8 @@
 <template>
     <main class="projeto">
-        <ProjetoDescricao :id="($route.params.id as string)"/>
-        
+        <ProjetoDescricao :id="($route.params.id instanceof Array ? '' : $route.params.id)"/>
+        <technologies :id="($route.params.id instanceof Array ? '' : $route.params.id)"/>
+        <contact />
     </main>
 </template>
 
@@ -15,12 +16,21 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Contact from '../components/Contact.vue';
 import ProjetoDescricao from '../components/ProjetoDescricao.vue';
+import Technologies from '../components/Technologies.vue';
 
 export default defineComponent({
     name: "Projeto",
     setup() {
     },
-    components: { ProjetoDescricao }
+    components: { ProjetoDescricao, Technologies, Contact },
+    mounted() {
+        const element = document.getElementById('cabecalho');
+
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+    },
 })
 </script>

@@ -3,6 +3,7 @@ export default {
   darkMode: "class",
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
+
     fontFamily: {
       montserrat: ['Montserrat', "sans-serif"]
     },
@@ -10,6 +11,16 @@ export default {
       titulo: "32px"
     },
     extend: {
+      backgroundSize: {
+        cardDeMadeiraPequeno: "370px",
+        cardDeMadeiraGrande: "470px",
+        cardTecnologiaDesktop: "450px",
+        cardTecnologiaTablet: "260px",
+        cardTecnologiaMobile: "200px"
+      },
+      gridTemplateColumns: {
+        certificadoColDesktop: "443px 443px 1fr",
+      },
       boxShadow: {
         cardProjeto: '6px 13px 8px 3px rgba(255, 255, 255, 0.15)',
         modalShadowLight: "0px 0px 7px 10px rgba(0, 0, 0, 0.25)",
@@ -21,7 +32,7 @@ export default {
         redShadow: "2px 4px 6px red",
         blackShadow: "2px 4px 6px black",
         whiteShadow: "1px 1px 4px white",
-        blueShadow: "2px 4px 6px blue"
+        blueShadow: "2px 2px 6px blue"
       },
       width: {
         desktop: "1128px",

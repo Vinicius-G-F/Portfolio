@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted, onBeforeUnmount } from 'vue';
+import { defineComponent, ref, onMounted, onBeforeUnmount, computed } from 'vue';
 import IIdioma from '../interfaces/IIdioma';
 import { useStore } from '../store/store';
 const store = useStore();
@@ -23,39 +23,52 @@ const store = useStore();
 
 export default defineComponent({
     name: "SeletorDeIdioma",
-    computed: {
-        idiomaSelecionado(): IIdioma {
-            return store.getters.idiomaAtivado
-        },
-        idiomasNaoSelecionados(): IIdioma[] {
-            return store.getters.idiomasDesativados
-        }
-    },
     setup() {
         const languageSelectorRef = ref<null | HTMLDivElement>(null)
         let isLangMenuOpen = ref(false)
-        const trocarIdioma = (idioma: string) => {
+        const textos = {
+            "pt-br": {
+                title: "Vinícius Graciano Faria - Portfólio"  
+            },
+            en: {
+                title: "Vinícius Graciano Faria - Portfolio"  
+            },
+
+        }
+        const trocarIdioma = (idioma: "pt-BR" | "en") => {
             store.commit("trocarIdioma", idioma)
             document.documentElement.setAttribute('lang', idioma)
             isLangMenuOpen.value = false
+            const idiomaFormatado = idioma.toLowerCase() as "pt-br" | "en"
+            document.title = textos[idiomaFormatado].title
         }
         const alternarMenu = ()=>{
             isLangMenuOpen.value = !isLangMenuOpen.value
         }
 
-        const aoClicarFora = (event: MouseEvent) => {
+        const aoClicarForaLangSelector = (event: MouseEvent) => {
             if (languageSelectorRef.value && !languageSelectorRef.value.contains(event.target as Node)) {
                     isLangMenuOpen.value = false;
             }
        
         }
 
+        const idiomaSelecionado = computed((): IIdioma => {
+            return store.getters.idiomaAtivado
+        })
+
+        const idiomasNaoSelecionados = computed((): IIdioma[]=>{
+            return store.getters.idiomasDesativados
+        })
+
         onMounted(() => {
-            document.addEventListener('click', aoClicarFora);
+            document.addEventListener('click', aoClicarForaLangSelector);
+            const idiomaFormatado = idiomaSelecionado.value.nome.toLowerCase() as "pt-br" | "en"
+            document.title = textos[idiomaFormatado].title
         });
 
         onBeforeUnmount(() => {
-            document.removeEventListener('click', aoClicarFora);
+            document.removeEventListener('click', aoClicarForaLangSelector);
         });
 
         return {
@@ -63,12 +76,11 @@ export default defineComponent({
             isLangMenuOpen,
             languageSelectorRef,
             alternarMenu,
-            aoClicarFora
+            aoClicarForaLangSelector,
+            idiomaSelecionado,
+            idiomasNaoSelecionados
         }
-    },
-    mounted() {
-    document.addEventListener('click', this.aoClicarFora);
-  }
+    }
 })
 </script>
 

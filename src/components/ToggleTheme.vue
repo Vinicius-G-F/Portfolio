@@ -1,9 +1,9 @@
 <template>
-    <div v-if="!isDarkMode" class="botao-lua" @click="darkThemeTogle">
+    <div v-if="!isDarkMode" class="botao-lua" @click="darkThemeToggle">
         <p>{{ textos[idiomaSelecionado()].modoEscuro }}</p>
         <img src="/assets/img/icons/moon.svg" alt="escurecer a página">
     </div>
-    <div v-else class="botao-sol" @click="darkThemeTogle">
+    <div v-else class="botao-sol" @click="darkThemeToggle">
         <p>{{textos[idiomaSelecionado()].modoClaro}}</p>
         <img src="/assets/img/icons/sun.svg" alt="escurecer a página">
     </div>
@@ -36,10 +36,9 @@ export default defineComponent({
         isDarkMode(){
             return store.state.isDarkMode
         },
-
     },
     methods: {
-        darkThemeTogle() {
+        darkThemeToggle() {
             document.documentElement.classList.toggle('dark');
             store.commit('darkModeToggle')
         },
@@ -49,14 +48,14 @@ export default defineComponent({
     },
     mounted() {
         const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        darkModeMediaQuery.matches && this.darkThemeTogle()
+        darkModeMediaQuery.matches && this.darkThemeToggle()
     }
 })
 </script>
 
 <style lang="scss" scoped>
     .botao-lua {
-        @apply flex items-center gap-6 px-8 py-4 bg-purple-400 fixed bottom-6 left-6 rounded-[99px] text-white cursor-pointer;
+        @apply hidden xl:flex items-center gap-6 px-8 py-4 bg-purple-400 fixed bottom-6 left-6 rounded-[99px] text-white cursor-pointer;
         
         &:hover {
             p {
@@ -68,7 +67,7 @@ export default defineComponent({
         }
     }
     .botao-sol {
-        @apply flex items-center gap-6 px-8 py-4 bg-yellow-400 fixed bottom-6 left-6 rounded-[99px] cursor-pointer;
+        @apply hidden xl:flex items-center gap-6 px-8 py-4 bg-yellow-400 fixed bottom-6 left-6 rounded-[99px] cursor-pointer;
         
         &:hover {
             p {

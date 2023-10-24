@@ -1,5 +1,5 @@
 <template>
-    <section class="certificados">
+    <section class="certificados" id="certification">
         <h2>{{ textos[idiomaSelecionado].tituloSecao }}</h2>
         <div class="certificados__lista">
             <div v-for="(certificado, index) in certificadosParaVisualizacao" v-bind:key="certificado.id"
@@ -57,19 +57,17 @@
 
 <style lang="scss" scoped>
 .certificados {
-    @apply mx-auto w-desktop mt-14;
+    @apply xl:mx-auto xl:w-desktop mt-14 mx-4 sm:mx-8 pb-8 sm:pb-14;
 
     h2 {
-        @apply text-center text-[32px] font-bold mb-8 dark:text-white;
+        @apply text-center text-[24px] sm:text-[32px] font-bold mb-8 dark:text-white;
     }
 
     &__lista {
-        @apply grid;
-        grid-template-columns: 443px 443px 1fr;
+        @apply grid grid-cols-1 sm:grid-cols-2 justify-items-center xl:justify-items-start xl:grid-cols-certificadoColDesktop;
 
         .certificado {
-            @apply w-[246px] h-[290px] bg-[url(/assets/img/certificados/placa-de-madeira.png)] bg-no-repeat bg-top mb-8 drop-shadow-certificadoLight dark:drop-shadow-certificadoDark cursor-pointer;
-            background-size: 370px;
+            @apply w-[320px] h-[380px] sm:w-[246px] sm:h-[290px] bg-[url(/assets/img/certificados/placa-de-madeira.png)] bg-no-repeat bg-top mb-8 drop-shadow-certificadoLight dark:drop-shadow-certificadoDark cursor-pointer bg-cardDeMadeiraGrande sm:bg-cardDeMadeiraPequeno;
 
             &:hover {
                 animation: animacaoPlaca 0.5s linear infinite;
@@ -77,7 +75,7 @@
             }
 
             .imagem-container {
-                @apply w-full pt-[109px];
+                @apply w-full sm:pt-[109px] pt-[160px];
 
                 img {
                     @apply mx-auto w-[56px] h-[56px] border-4 border-[#4E311A] rounded-[16px] bg-[#A97C5B];
@@ -85,7 +83,7 @@
             }
 
             .descricao-container {
-                @apply px-5 text-white font-bold pt-2 h-[94px] leading-[normal] justify-between flex flex-col;
+                @apply px-5 text-white font-bold pt-2 h-[110px] sm:h-[94px] leading-[normal] justify-between flex flex-col;
 
                 div {
                     h5 {
@@ -113,9 +111,6 @@
 
     .mobile-tablet-botao {
         @apply border flex xl:hidden items-center gap-4 px-8 py-4 border-black mx-auto underline text-[24px] rounded-[16px] dark:invert hover:drop-shadow-blackShadow dark:hover:drop-shadow-whiteShadow duration-150;
-        svg {
-            @apply fill-black dark:fill-white;
-        }
     }
 }
 

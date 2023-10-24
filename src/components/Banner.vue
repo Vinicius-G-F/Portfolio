@@ -92,15 +92,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
     .banner {
-        @apply bg-fixed bg-contain flex justify-center items-center bg-dark-900;
+        @apply bg-fixed h-[calc(100vh-56px)] sm:h-[calc(100vh-78px)] xl:h-[calc(100vh-4rem)] bg-contain flex justify-center items-center bg-dark-900;
         background-image: url('/assets/img/banner.jpg');
-        height: calc(100vh - 4rem);
         opacity: 0.8;
     }
     .mensagem {
-        @apply text-titulo font-bold w-desktop text-white text-center absolute flex items-center top-16; 
-        height: calc(100vh - 4rem);
-        left: calc((100vw - 1128px) / 2);
+        @apply sm:text-titulo text-[24px] font-bold w-full px-4 sm:px-8 xl:p-0 xl:w-desktop text-white text-center absolute flex items-center top-16 h-[calc(100vh-56px)] sm:h-[calc(100vh-78px)] xl:h-[calc(100vh-4rem)] -translate-x-2/4 left-2/4; 
         p {
             span.cursor {
                 display: inline-block;
