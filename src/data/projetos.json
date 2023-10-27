@@ -1,6 +1,60 @@
 [
     {
         "id": 0,
+        "imgURL": "/assets/img/banner.jpg",
+        "tecnologiasImg":[
+            {
+                "url": "/assets/img/icons/vue.svg",
+                "alt": "vue"
+            },
+            {
+                "url": "/assets/img/icons/nodejs.png",
+                "alt": "node"
+            },
+            {
+                "url": "/assets/img/certificados/typescript.png",
+                "alt": "typescript"
+            },
+            {
+                "url": "/assets/img/icons/tailwind-css.svg",
+                "alt": "tailwind"
+            },
+            {
+                "url": "/assets/img/icons/sass.svg",
+                "alt": "sass"
+            },
+            {
+                "url": "/assets/img/certificados/figma.png",
+                "alt": "figma"
+            }
+        ],
+        "links": {
+            "git": "https://github.com/Vinicius-G-F/Portfolio",
+            "deploy": "https://viniciusgf.com.br"
+        },
+        "textos": {
+            "pt-br": {
+                "titulo": "Meu Site Pessoal",
+                "intro": "Projeto pessoal feito com o objetivo de trazer meu portfólio para dentro deste site.",
+                "paragrafosDescricao": [
+                    "Hoje em dia é vital ter a sua marca registrada na internet, portanto, eu decidi fazer esse site com o objetivos de auto divulgação para o meu trabalho.",
+                    "Os desafios até o deploy final foram inúmeros, nele eu pudi aprender muitas coisas como por exemplo á subir uma aplicação back-end no render, essa aplicação está responsável por fazer o parte 'fale comigo' do site funcionar (talvez no futuro eu coloque mais coisas nela para poder fazer um crud no site).",
+                    "A princípio, eu comecei esse projeto do zero fazendo o layout no figma e só então passando para o código, o framework da vez foi o vue com vite e typescript, para as estilizações eu escolhi o tailwindcss, tanto o tailwindcss quanto o vue foram tecnologias que eu nunca tinha usado em nenhum projeto anterior e muito menos o figma."
+                ]
+            },
+            "en": {
+                "titulo": "My Personal Website",
+                "intro": "Personal project made with the aim of bringing my portfolio to this website.",
+                "paragrafosDescricao": [
+                    "Nowadays it is vital to have your trademark on the internet, therefore, I decided to create this website with the aim of self-disclosure for my work.",
+                    "The challenges leading up to the final deployment were numerous, in it I was able to learn many things such as how to upload a back-end application in the render, this application is responsible for making the 'talk to me' part of the website work (maybe in the future I put more things in it so I can make a crud on the website)",
+                    "At first, I started this project from scratch by doing the layout in figma and only then moving on to the code, the framework at the time was vue with vite and typescript, for the stylizations I chose tailwindcss, both tailwindcss and vue were technologies that I had never used in any previous project, much less figma."
+                ] 
+            }
+        }
+    },
+    {
+        "id": 1,
         "imgURL": "/assets/img/projetos/meteora.png",
         "tecnologiasImg":[
             {
@@ -56,7 +110,7 @@
         }
     },
     {
-        "id": 1,
+        "id": 2,
         "imgURL": "/assets/img/projetos/GameSaver.png",
         "tecnologiasImg":[
             {
@@ -112,7 +166,7 @@
         }
     },
     {
-        "id": 2,
+        "id": 3,
         "imgURL": "/assets/img/projetos/code-chella.png",
         "tecnologiasImg":[
             {
@@ -158,7 +212,7 @@
         }
     },
     {
-        "id": 3,
+        "id": 4,
         "imgURL": "/assets/img/projetos/alura-geek.png",
         "tecnologiasImg":[
             {

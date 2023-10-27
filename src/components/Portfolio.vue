@@ -4,9 +4,11 @@
         <div class="projetos-container">
             <div class="projeto" v-for="projeto in projetos" v-bind:key="projeto.id">
                 <img :src="projeto.imgURL" :alt="projeto.textos[idiomaSelecionado()].titulo">
-                <div>
-                    <h3>{{ projeto.textos[idiomaSelecionado()].titulo }}</h3>
-                    <p>{{ projeto.textos[idiomaSelecionado()].intro }}</p>
+                <div class="projeto__body">
+                    <div class="body__textos">
+                        <h3>{{ projeto.textos[idiomaSelecionado()].titulo }}</h3>
+                        <p>{{ projeto.textos[idiomaSelecionado()].intro }}</p>
+                    </div>
                     <router-link :to="'/projeto/' + projeto.id.toString()">
                         <button type="button">{{ textos[idiomaSelecionado()].botaoCard }}</button>
                     </router-link>
@@ -33,22 +35,24 @@
             box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
 
             img {
-                @apply w-[334px] max-h-[220px] rounded-[16px] mb-6;
+                @apply w-[334px] max-h-[200px] rounded-[16px] mb-6;
             }
 
-            div {
-                @apply text-left px-6;
-
-                h3 {
+            &__body {
+                @apply text-left px-6 grid;
+                height: -webkit-fill-available;
+                div {
+                    h3 {
                     @apply mb-4 font-semibold;
-                }
-
-                p {
-                    @apply mb-6;
+                    }
+    
+                    p {
+                        @apply mb-6;
+                    }
                 }
 
                 a {
-                    @apply text-white bg-blue-300 py-3 px-5 rounded-[6px] hover:bg-purple-300 duration-150;
+                    @apply text-white bg-blue-300 py-3 px-5 rounded-[6px] hover:bg-purple-300 duration-150 self-end justify-self-start;
                 }
             }
         }
