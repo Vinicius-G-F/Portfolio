@@ -37,7 +37,7 @@ export default defineComponent({
             "pt-br": {
                 paragrafo1: `Atualmente eu estou a disposição para possíveis contratações e trabalhos free lancers com desenvolvimento Front-end, os projetos em que eu trabalhei estão logo abaixo na seção de portfólio do site ou no meu curriculum.`,
                 paragrafo2: `Tecnologias:`,
-                paragrafo3: `typescript, react, jquery, bootstrap, tailwind, wordpress, javascript, html, scss, css, php, figma, git e github.`,
+                paragrafo3: `Typescript, React, Vuejs, Nodejs, Jquery, Bootstrap, Tailwind, Wordpress, Javascript, Html, Scss, CSS, PHP, Figma, Git e Github.`,
                 paragrafo4: `Clique no botão abaixo para baixar o meu curriculum:`,
                 titulo: "O que faço"
 
@@ -45,7 +45,7 @@ export default defineComponent({
             "en": {
                 paragrafo1: `I am currently available for possible hiring and free lance work with Front-end development, the projects I worked on are below in the portfolio section of the website or on my CV.`,
                 paragrafo2: `Technologies:`,
-                paragrafo3: `typescript, react, jquery, bootstrap, tailwind, wordpress, javascript, html, scss, css, php, figma, git and github.`,
+                paragrafo3: `Typescript, React, Vuejs, Nodejs, Jquery, Bootstrap, Tailwind, Wordpress, Javascript, Html, Scss, CSS, PHP, Figma, Git e Github.`,
                 paragrafo4: "Click the button below to download my CV:",
                 titulo: "SKILLS"
             }
