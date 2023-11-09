@@ -3,7 +3,10 @@
         <h2>{{ textos[idiomaSelecionado].tituloSecao }}</h2>
         <div class="certificados__lista">
             <div v-for="(certificado, index) in certificadosParaVisualizacao" v-bind:key="certificado.id"
-                class="certificado" :class="index >= maximoProjetosMobileETablet ? 'hidden xl:block' : ''"
+                class="certificado" :class="{
+                    'hidden xl:block': index >= maximoProjetosMobileETablet ? 'hidden xl:block' : '',
+                    'hover:animate-animacaoPlaca': !isModalOpen
+                }"
                 @click="abrirModal(certificado.imgCertificado[idiomaSelecionado].frente, certificado.imgCertificado[idiomaSelecionado].verso)">
                 <div class="imagem-container">
                     <img :src="certificado.imgCertificadoIcone" :alt="certificado.textos[idiomaSelecionado].curso">
@@ -67,12 +70,7 @@
         @apply grid grid-cols-1 sm:grid-cols-2 justify-items-center xl:justify-items-start xl:grid-cols-certificadoColDesktop;
 
         .certificado {
-            @apply w-[320px] h-[380px] sm:w-[246px] sm:h-[290px] bg-[url(/assets/img/certificados/placa-de-madeira.png)] bg-no-repeat bg-top mb-8 drop-shadow-certificadoLight dark:drop-shadow-certificadoDark cursor-pointer bg-cardDeMadeiraGrande sm:bg-cardDeMadeiraPequeno;
-
-            &:hover {
-                animation: animacaoPlaca 0.5s linear infinite;
-
-            }
+            @apply w-[320px] h-[380px] sm:w-[246px] sm:h-[290px] bg-[url(/assets/img/certificados/placa-de-madeira.png)] bg-no-repeat bg-top mb-8 drop-shadow-certificadoLight dark:drop-shadow-certificadoDark cursor-pointer bg-cardDeMadeiraGrande sm:bg-cardDeMadeiraPequeno; 
 
             .imagem-container {
                 @apply w-full sm:pt-[109px] pt-[160px];
@@ -146,28 +144,6 @@
                 @apply text-[#FF0000] dark:text-white dark:border-white dark:bg-black border-2 border-red-100 py-4 px-8 rounded-[16px] hover:drop-shadow-redShadow hover:underline duration-150 dark:hover:drop-shadow-whiteShadow;
             }
         }
-    }
-}
-
-@keyframes animacaoPlaca {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(5deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    75% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
     }
 }
 </style>

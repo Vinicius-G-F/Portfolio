@@ -35,7 +35,7 @@ export default defineComponent({
                 paragrafo1: `Hello, I'm Vinícius Graciano Faria, a web technology enthusiast and freelance Front-end developer. At the age of 28, my journey began as a former production engineering student, but my passion for programming led me to follow a different path. I have advanced English, which helps me read documentation and master new technologies quickly.`,
                 paragrafo2: `In my leisure time, you can find me watching anime, exploring virtual worlds in various games or challenging my mind with games of chess (my rating on chess.com in quick games is around 1500). Furthermore, practicing Muay Thai is an important part of my life as it helps me maintain balance between mind and body.`,
                 paragrafo3: `I love combining my creativity and technical skills to create amazing web experiences. If you're looking for a passionate and committed Front-end developer, I'm here to help with whatever you need.`,
-                titulo: `SKILLS`
+                titulo: `ABOUT`
             }
         }
         return {

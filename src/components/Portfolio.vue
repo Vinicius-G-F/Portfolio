@@ -1,6 +1,6 @@
 <template>
     <section class="portfolio" id="portfolio">
-        <h2>Portfólio</h2>
+        <h2>{{textos[idiomaSelecionado()].portfolio}}</h2>
         <div class="projetos-container">
             <div class="projeto" v-for="projeto in projetos" v-bind:key="projeto.id">
                 <img :src="projeto.imgURL" :alt="projeto.textos[idiomaSelecionado()].titulo">
@@ -73,10 +73,12 @@ export default defineComponent({
         const projetos = projetosLista;
         const textos = {
             'pt-br': {
-                botaoCard: "Ver mais"
+                botaoCard: "Ver mais",
+                portfolio: "Portfólio"
             },
             en: {
-                botaoCard: "See more"
+                botaoCard: "See more",
+                portfolio: "PORTFOLIO"
             }
         }
         let isModalOpen = false
