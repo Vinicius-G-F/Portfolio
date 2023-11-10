@@ -168,7 +168,7 @@ export default defineComponent({
                 link2: "ABOUT",
                 link3: "SKILLS",
                 link4: "PORTFOLIO",
-                link5: "CERTIFICATES",
+                link5: "CERTIFICATION",
                 link6: "CONTACT"
             }
         };
