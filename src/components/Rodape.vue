@@ -58,13 +58,15 @@ const store = useStore()
 export default defineComponent({
     name: "Rodape",
     data() {
+        const dataAtual = new Date();
+        const ano = dataAtual.getFullYear();
         const textos = {
             ["pt-br"]: {
-                creditos: "2023 © Desenvolvido por Vinícius Graciano Faria",
+                creditos: `${ano} © Desenvolvido por Vinícius Graciano Faria`,
                 redes: "Minhas redes:"
             },
             en: {
-                creditos: "2023 © Developed by Vinícius Graciano Faria",
+                creditos: `${ano} © Developed by Vinícius Graciano Faria`,
                 redes: "My social networks:"
             }
         }
