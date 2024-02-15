@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dark-900">
+    <div class="banner-caixa">
         <div class="banner"></div>
     
         <div class="mensagem">
@@ -91,24 +91,27 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-    .banner {
-        @apply bg-fixed h-[calc(100vh-56px)] sm:h-[calc(100vh-78px)] xl:h-[calc(100vh-4rem)] bg-contain flex justify-center items-center bg-dark-900;
-        background-image: url('/assets/img/banner.jpg');
-        opacity: 0.8;
-    }
-    .mensagem {
-        @apply sm:text-titulo text-[24px] font-bold w-full px-4 sm:px-8 xl:p-0 xl:w-desktop text-white text-center absolute flex items-center top-16 h-[calc(100vh-56px)] sm:h-[calc(100vh-78px)] xl:h-[calc(100vh-4rem)] -translate-x-2/4 left-2/4; 
-        p {
-            span.cursor {
-                display: inline-block;
-                margin-left: 3px;
-                width: 4px;
-                background-color: #fff;
-                animation: cursorBlink 1s infinite;
-            }
-
-            span.cursor.typing {
-                animation: none;
+    .banner-caixa {
+        @apply bg-dark-900 relative;
+        .banner {
+            @apply bg-fixed h-[calc(100vh-56px)] sm:h-[calc(100vh-78px)] xl:h-[calc(100vh-4rem)] bg-contain flex justify-center items-center bg-dark-900;
+            background-image: url('/assets/img/banner.jpg');
+            opacity: 0.8;
+        }
+        .mensagem {
+            @apply sm:text-titulo text-[24px] font-bold w-full px-4 sm:px-8 xl:p-0 xl:w-desktop text-white text-center absolute flex items-center top-0 h-[calc(100vh-56px)] sm:h-[calc(100vh-78px)] xl:h-[calc(100vh-4rem)] -translate-x-2/4 left-2/4; 
+            p {
+                span.cursor {
+                    display: inline-block;
+                    margin-left: 3px;
+                    width: 4px;
+                    background-color: #fff;
+                    animation: cursorBlink 1s infinite;
+                }
+    
+                span.cursor.typing {
+                    animation: none;
+                }
             }
         }
     }
