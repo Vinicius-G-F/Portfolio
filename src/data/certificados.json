@@ -3,6 +3,29 @@
         "id": 0,
         "imgCertificado": {
             "pt-br": {
+                "frente": "/assets/img/certificados/uninter.jpg",
+                "verso": "/assets/img/certificados/uninter.jpg"
+            },
+            "en": {
+                "frente": "/assets/img/certificados/uninter.jpg",
+                "verso": "/assets/img/certificados/uninter.jpg"
+            }
+        },
+        "imgCertificadoIcone": "/assets/img/certificados/uninter.jpg",
+        "escola": "UNINTER",
+        "textos": {
+            "pt-br": {
+                "curso": "ADS (Início: 2024, Fim: 2026)"
+            },
+            "en": {
+                "curso": "ADS (Beginning: 2024, End: 2026)"
+            }
+        }
+    },
+    {
+        "id": 1,
+        "imgCertificado": {
+            "pt-br": {
                 "frente": "/assets/img/certificados/en/cna-frente.png",
                 "verso": "/assets/img/certificados/en/cna-verso.png"
             },
@@ -23,7 +46,7 @@
         }
     },
     {
-        "id": 1,
+        "id": 2,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/react-typescript-frente-1.png",
@@ -47,7 +70,7 @@
 
     },
     {
-        "id": 2,
+        "id": 3,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/html-css-frente-1.png",
@@ -70,7 +93,7 @@
         }
     },
     {
-        "id": 3,
+        "id": 4,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/js-web-frente-1.png",
@@ -93,7 +116,7 @@
         }
     },
     {
-        "id": 4,
+        "id": 5,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/react-js-frente-1.png",
@@ -116,7 +139,7 @@
         }
     },
     {
-        "id": 5,
+        "id": 6,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/ts-frente-1.png",
@@ -139,7 +162,7 @@
         }
     },
     {
-        "id": 6,
+        "id": 7,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/vue-frente-1.png",
@@ -162,7 +185,7 @@
         }
     },
     {
-        "id": 7,
+        "id": 8,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/js-frente-1.png",
@@ -185,7 +208,7 @@
         }
     },
     {
-        "id": 8,
+        "id": 9,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/wordpress-frente-1.png",
@@ -208,7 +231,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 10,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/php-frente-1.png",
@@ -231,7 +254,7 @@
         }
     },
     {
-        "id": 10,
+        "id": 11,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/bootstrap-frente-1.png",
@@ -255,7 +278,7 @@
         
     },
     {
-        "id": 11,
+        "id": 12,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/figma-frente-1.png",
@@ -279,7 +302,7 @@
     
     },
     {
-        "id": 12,
+        "id": 13,
         "imgCertificado": {
             "pt-br": {
                 "frente": "/assets/img/certificados/pt-br/iniciante-frente-1.png",
